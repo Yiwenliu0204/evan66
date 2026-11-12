@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Startup Café 講座回憶錄｜柳易妏 Ive</title>
+<meta name="description" content="在政大 CICII Startup Café 沙龍分享 AI 與 LLM 的講座回憶。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fff8ec;--cream-2:#fdf0dc;--card:#fffdf8;--ink:#5a4636;--ink-soft:#8b7563;
+    --butter:#f7d98b;--peach:#f6c3a8;--pink:#f4b6c2;--mint:#bfe3cf;--line:#efe0c8;
+    --shadow:0 6px 0 #f1e2c9;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--cream);color:var(--ink);
+    font-family:"Zen Maru Gothic","PingFang TC","Noto Sans TC",sans-serif;line-height:1.85;
+    background-image:radial-gradient(var(--cream-2) 2px,transparent 2px);background-size:26px 26px;
+  }
+  a{color:inherit}
+  .wrap{max-width:860px;margin:0 auto;padding:0 16px}
+  .back{display:inline-block;margin:20px 0 0;text-decoration:none;font-size:.92rem;padding:4px 14px;border-radius:999px;background:var(--card);border:2px solid var(--line)}
+  .back:hover{background:var(--butter)}
+
+  header{text-align:center;padding:36px 0 30px}
+  .kicker{font-family:"Fredoka",sans-serif;letter-spacing:.12em;color:var(--ink-soft);margin:0}
+  h1{font-size:2.2rem;margin:4px 0 10px;line-height:1.35}
+  .sub{margin:0 auto;max-width:560px;color:var(--ink-soft)}
+  .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:16px 0 0;padding:0;list-style:none}
+  .chips li{padding:3px 14px;border-radius:999px;font-size:.86rem;border:2px solid var(--line)}
+  .chips li:nth-child(1){background:#fff1c9}.chips li:nth-child(2){background:#ffe3d6}.chips li:nth-child(3){background:#e3f3e9}
+
+  .cover{
+    position:relative;background:var(--card);padding:12px 12px 16px;border-radius:22px;
+    border:2px solid var(--line);box-shadow:var(--shadow);transform:rotate(-1deg);margin:0 0 50px;
+  }
+  .cover img{width:100%;display:block;border-radius:14px;aspect-ratio:4/3;object-fit:cover}
+  .cover figcaption{text-align:center;margin-top:10px;color:var(--ink-soft);font-size:.92rem}
+  .tape{position:absolute;top:-14px;left:50%;width:110px;height:28px;transform:translateX(-50%) rotate(3deg);background:rgba(247,217,139,.75);border-radius:4px}
+
+  .chapter{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;margin:0 0 56px}
+  .chapter:nth-of-type(even) .photo{order:2}
+  .photo{
+    position:relative;background:var(--card);padding:10px 10px 14px;border-radius:18px;
+    border:2px solid var(--line);box-shadow:var(--shadow);margin:0;
+  }
+  .chapter:nth-of-type(odd) .photo{transform:rotate(1.5deg)}
+  .chapter:nth-of-type(even) .photo{transform:rotate(-1.5deg)}
+  .photo img{width:100%;display:block;border-radius:12px;aspect-ratio:4/3;object-fit:cover}
+  .photo .tape{width:80px;height:22px}
+  .num{font-family:"Fredoka",sans-serif;display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--butter);font-size:1.05rem;margin-bottom:6px}
+  .chapter:nth-of-type(3n+2) .num{background:var(--peach)}
+  .chapter:nth-of-type(3n) .num{background:var(--mint)}
+  .chapter h2{margin:0 0 8px;font-size:1.3rem;line-height:1.5}
+  .chapter p{margin:0 0 10px}
+  .quote{margin:12px 0 0;padding:10px 16px;border-radius:16px;background:var(--card);border:2px dashed var(--line);font-size:.95rem}
+
+  .thanks{
+    text-align:center;background:var(--card);border:2px solid var(--line);border-radius:26px;
+    padding:28px 22px;box-shadow:var(--shadow);margin:0 0 30px;
+  }
+  .thanks h2{margin:0 0 8px;font-size:1.35rem}
+  .thanks p{margin:0 0 8px}
+  .btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+  .btn{display:inline-block;padding:9px 22px;border-radius:999px;text-decoration:none;font-weight:700;background:var(--peach);box-shadow:0 5px 0 #e8a98a;transition:transform .15s,box-shadow .15s}
+  .btn.alt{background:var(--butter);box-shadow:0 5px 0 #e3bf62}
+  .btn:hover{transform:translateY(-2px)}
+  footer{text-align:center;color:var(--ink-soft);font-size:.85rem;padding:10px 0 40px}
+
+  @media (max-width:640px){
+    h1{font-size:1.75rem}
+    .chapter{grid-template-columns:1fr;gap:20px;margin-bottom:44px}
+    .chapter:nth-of-type(even) .photo{order:0}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← 回到首頁</a>
+
+  <header>
+    <p class="kicker">TALK MEMORIES</p>
+    <h1>☕ Startup Café 沙龍<br>講座回憶錄</h1>
+    <p class="sub">這次在政大 CICII 的 Startup Café 沙龍，和大家聊 AI 到底在「想」什麼，以及怎麼讓它成為工作上的好幫手。</p>
+    <ul class="chips"><li>NCCU CICII</li><li>LLM 入門</li><li>AI 實戰應用</li></ul>
+  </header>
+
+  <figure class="cover">
+    <span class="tape" aria-hidden="true"></span>
+    <img src="images/talk/5.jpg" alt="Startup Café 沙龍現場，台下坐滿聽眾，易妏在台上指著螢幕講解">
+    <figcaption>那天下午，咖啡香和滿滿的好奇心 ☕</figcaption>
+  </figure>
+
+  <section class="chapter">
+    <figure class="photo">
+      <span class="tape" aria-hidden="true"></span>
+      <img src="images/talk/1.jpg" alt="易妏拿著麥克風，身後螢幕顯示「LLM：預測下一個字」">
+    </figure>
+    <div>
+      <span class="num">01</span>
+      <h2>LLM 其實在做一件事：預測下一個「字」</h2>
+      <p>開場先拆解大型語言模型的原理。它會看前面的文字，替接下來可能出現的字打分數，再一個字一個字接下去。</p>
+      <p class="quote">「台股今天在……」後面要接「跌」、「漲」，還是「三隻小貓」？就看前文給了什麼線索 🐱</p>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <figure class="photo">
+      <span class="tape" aria-hidden="true"></span>
+      <img src="images/talk/2.jpg" alt="易妏站在台上微笑講解，螢幕寫著「LLM 生成的都是幻覺」">
+    </figure>
+    <div>
+      <span class="num">02</span>
+      <h2>LLM 生成的，都是「幻覺」</h2>
+      <p>既然只是在預測下一個字，它負責的是「看起來像」，而不是「是真的」。</p>
+      <p>理解這點之後，就知道為什麼 AI 偶爾會一本正經地胡說八道，也知道哪些地方需要我們自己把關。</p>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <figure class="photo">
+      <span class="tape" aria-hidden="true"></span>
+      <img src="images/talk/3.jpg" alt="易妏站在 Startup Café 背板前比著手勢講解，螢幕顯示「具體了，但還能更符合分享目的」">
+    </figure>
+    <div>
+      <span class="num">03</span>
+      <h2>具體了，但還能更符合目的</h2>
+      <p>接著實際示範怎麼一步步修改提示詞：先讓內容變具體，再讓它貼近這次分享真正想達成的目的。</p>
+      <p>好的提問不是一次到位，而是和 AI 來回對話、慢慢調整出來的。</p>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <figure class="photo">
+      <span class="tape" aria-hidden="true"></span>
+      <img src="images/talk/4.jpg" alt="易妏在台上和聽眾互動，螢幕顯示「AI 給選擇，你定方向」">
+    </figure>
+    <div>
+      <span class="num">04</span>
+      <h2>AI 給選擇，你定方向</h2>
+      <p>最後的重點：AI 很擅長攤開各種可能，但要選哪一條路、要說什麼故事，決定權一直在我們手上。</p>
+      <p class="quote">把 AI 當成幫你列選項的夥伴，而不是替你做決定的人 ✨</p>
+    </div>
+  </section>
+
+  <section class="thanks">
+    <h2>💛 謝謝每一位來聽的你</h2>
+    <p>謝謝 NCCU CICII 的邀請，也謝謝現場每一個認真聽講、拿起手機做筆記的大家。</p>
+    <p>希望這場分享能讓 AI 變得不那麼神秘，下次見！</p>
+    <div class="btns">
+      <a class="btn" href="https://www.facebook.com/share/p/1dYJreb9ud/" target="_blank" rel="noopener">看更多演講資訊</a>
+      <a class="btn alt" href="https://www.youtube.com/@ive-diveai" target="_blank" rel="noopener">到我的 YouTube</a>
+    </div>
+  </section>
+</div>
+<footer>© 2026 柳易妏 Ive · made with 🧈</footer>
+</body>
+</html>

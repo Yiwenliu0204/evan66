@@ -17,6 +17,7 @@ p,li,figcaption{text-wrap:pretty}
 h1,h2,h3{text-wrap:balance}
 .nowrap{white-space:nowrap}
 h1 .nw,h2 .nw,h3 .nw{display:inline-block}
+.w{white-space:nowrap}
 img{max-width:100%;height:auto}
 a{color:var(--accent)}a:hover{color:var(--accent-dark)}
 h1,h2,h3{font-family:var(--serif);font-weight:700;margin:0}

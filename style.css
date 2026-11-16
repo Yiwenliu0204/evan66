@@ -16,6 +16,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","
 p,li,figcaption{text-wrap:pretty}
 h1,h2,h3{text-wrap:balance}
 .nowrap{white-space:nowrap}
+h1 .nw,h2 .nw,h3 .nw{display:inline-block}
 img{max-width:100%;height:auto}
 a{color:var(--accent)}a:hover{color:var(--accent-dark)}
 h1,h2,h3{font-family:var(--serif);font-weight:700;margin:0}
@@ -148,6 +149,7 @@ details.more[open] summary{margin-bottom:16px}
   .nav{gap:16px;font-size:14px}
   .page-head h1{font-size:32px}
   .lead br,.talk h3 br{display:none}
+  .facts{gap:8px 24px}
   .trio{grid-template-columns:1fr}
   .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
